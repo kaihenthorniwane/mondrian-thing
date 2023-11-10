@@ -1,0 +1,113 @@
+/* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+*/
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+    
+.main-container{
+    display: inline-grid;
+    background-color: black;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 20px;
+    gap: 9px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 150ms ease-in-out 0s;
+
+}
+
+.main-container:hover{
+    grid-template-columns: 120px 198px 153px 250px;
+    grid-template-rows: 114px 130px 155px 320px;
+    gap: 9px;
+
+}
+
+.top-left-red-square {
+    background-color: #E72F24;
+}
+
+.white-square {
+    background-color: #F0F1EC;
+}
+
+.yellow-square {
+    background-color: #F9D01E;
+}
+
+.grey-square {
+    background-color: #232629;
+}
+
+.blue-square {
+    background-color: #004592;
+    border-bottom: 10px solid black;
+}
+
+/*stretch styles*/
+
+.down-2 {
+    grid-row-start: span 2;
+}
+
+.stretch-3 {
+    grid-column-start: span 3;
+}
+
+.stretch-2 {
+    grid-column-start: span 2;
+}
+
+
+/*border radius styles*/
+
+.bottom-right-round {
+    border-bottom-right-radius: 20px;
+}
+
+.bottom-left-round {
+    border-bottom-left-radius: 20px;
+}
+
+.top-left-round{
+    border-top-left-radius: 20px;
+}
+
+.top-right-round{
+    border-top-right-radius: 20px;
+}
+
+.all-round {
+    border-radius: 20px;
+}
+
+
+.right-round {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.left-round {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.top-round {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
